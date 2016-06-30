@@ -8,6 +8,19 @@ WindowJobScheduler provides this capability by setting the appropriate values fo
 The ideal use case is for daily background syncing of app data, particularly when developers might want this to happen in a window when their servers don't receive much load.
 
 ## How to use
+The library is distributed via jitpack. First, add the following line to your root level build.gradle
+
+    allprojects {
+        repositories {
+            ...
+            maven { url "https://jitpack.io" }
+        }
+    }
+
+Then add the following line to your app's build.gradle dependencies.
+
+    compile 'com.github.raveeshbhalla:WindowJobScheduler:0.1.0-SNAPSHOT'
+
 Scheduling tasks is fairly simple:
 
     new WindowTask()
